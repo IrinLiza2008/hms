@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AllotlistController;
+use App\Http\Controllers\RoomdetailsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('admin.master');
 });
+Route::get('admin/allotlist',[AllotlistController::class,'allotlist'])->name('admin.allotlist');
+Route::get('admin/allotlist/add',[AllotlistController::class,'add'])->name('admin.allotlist.add');
+Route::post('admin/allotlist/store',[AllotlistController::class,'store'])->name('admin.allotlist.store');
+
+Route::get('admin/roomdetails',[RoomdetailsController::class,'roomdetails'])->name('admin.roomdetails');
+
+

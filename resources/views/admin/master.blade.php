@@ -15,7 +15,7 @@
   <!-- <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css"> -->
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{{url('/css/style.css')}}">
   <!-- endinject -->
   <link rel="shortcut icon" href="images/favicon.png" />
 </head>
@@ -40,25 +40,25 @@
             <div class="col-md-12 grid-margin">
               <div class="d-flex justify-content-between flex-wrap">
                 <div class="d-flex align-items-end flex-wrap">
-                  <div class="mr-md-3 mr-xl-5">
-                    <h2>Welcome back,</h2>
-                    
-                  </div>
+                  
                   
                 </div>
-                <div class="d-flex justify-content-between align-items-end flex-wrap">
-                  <button type="button" class="btn btn-light bg-white btn-icon mr-3 d-none d-md-block ">
-                    hbjv
-                  </button>
-                 
-                </div>
+                
+
+
+               
+
+
+
+                
               </div>
+              @yield('content')
             </div>
           </div>
          
           
           
-          Lizaaaaaaaaaaaaa
+          
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
